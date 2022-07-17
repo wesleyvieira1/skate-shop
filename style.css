@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+}
+.nav-bar-list{
+    display: flex;
+    gap: 16px;
+}
+
+.nav-item a{
+    color: white;
+    font-family: Roboto, sans-serif;
+    padding: 50px 0px;
+    text-transform: uppercase;
+
+}
+.nav-item a:hover{
+    color: grey;
+}
+
+.nav-logo{
+    width: 200px;
+    padding: 50px;
+}
+.nav-icon{
+    width: 30px;
+    padding: 50px 0px;
+    cursor: pointer;
+}
+.nav-icon:hover{
+    transform: scale(1.1);
+}
+
+.nav-items-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-one{
+    height: 100vh;
+    background-image: url(assets/men-holding-skate.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-one-title-box{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20%;
+    
+}
+
+.section-one-title{
+    font-size: 48px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+}
+.section-one .icon-scrowpage img{
+    width: 30px;
+}
+.section-one .icon-scrowpage{
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    gap:16px;
+    position: relative;
+    top: 50%;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    animation: scrowdown 2s infinite;
+}
+
+@keyframes scrowdown {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+  }
+
+
+.section-two{
+    background-color: black;
+}
+
+.section-title-box{
+    text-align: center;
+}
+
+.section-title{
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    padding: 30px;
+}
+.card img{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.section-card-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    
+}
+.section-card-list .card{
+    width: 20%;
+    background-color: #2020244d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.section-card-list .card .card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-card-list .card .card-items .card-text a{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.section-card-list .card .card-items .card-text .card-price{
+    color: yellow;
+    font-weight: bold;
+}
+
+.section-card-list .card .card-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 16px;
+}
+
+.section-card-list .card .card-items .card-shop img{
+    width: 30px;
+    padding: px;
+    cursor: pointer;
+}
+.section-card-list .card .card-items .card-shop img:hover{
+    transform: scale(1.1);
+}
+
+.section-two-button-viewmore{
+    text-align: center;
+    padding: 30px;
+}
+
+.section-two-button-viewmore button{
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.37), rgba(128, 128, 128, 0.342));
+    border: none;
+    border-radius: 12px;
+    padding: 6 3rem;
+    line-height: 2.5;
+}
+
+.section-two-button-viewmore button a{
+    font-size: 16px;
+    padding:20px;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+.section-two-button-viewmore button a:hover{
+    color: gray;
+    transition: 2s;
+}
+.section-two-button-viewmore button:hover{
+    transform: scale(1.1);
+}
+
+.section-three{
+    background-color: black;
+}
+
+.footer{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.footer-item p{
+    color: rgb(80, 80, 80);
+    font-family: Roboto, sans-serif;
+}
+.footer-item h1 {
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 15px;
+}
+
+.footer-item:nth-child(2){
+    line-height: 25px;
+}
+.footer-item:nth-child(3){
+    line-height: 25px;
+}
+.footer-item:nth-child(4){
+    line-height: 25px;
+}
+
+.footer-item p:hover{
+    color: white;
+    cursor: pointer;
+}
+.credits{
+    background-color: rgb(32, 32, 32);
+    font-family: Roboto, sans-serif;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    padding: 15px;
+}
+.credits a{
+    color: white;
+    font-family: Roboto, sans-serif;
+}
